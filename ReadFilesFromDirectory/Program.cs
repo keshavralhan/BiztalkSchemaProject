@@ -16,9 +16,9 @@ namespace ReadFilesFromDirectory
             
             if (!string.IsNullOrEmpty(gacutilFilePath) && !string.IsNullOrEmpty(dllDirectoryPath))
             {
-                var dllFiles = Directory.GetFiles(dllDirectoryPath, "*.dll");
+                var dllFile = Directory.GetFiles(dllDirectoryPath, "*.dll");
                 List<string> gacFiles = new List<string>();
-                foreach (string dlls in dllFiles)
+                foreach (string dlls in dllFile)
                 {
                     //gacutilFilePath = "\"" + gacutilFilePath + "\"" + "-i";
                     string gacUtilQuery = string.Format("\"{0}\"" + " -i " + "\"{1}\"" + " -f ", gacutilFilePath, dlls);

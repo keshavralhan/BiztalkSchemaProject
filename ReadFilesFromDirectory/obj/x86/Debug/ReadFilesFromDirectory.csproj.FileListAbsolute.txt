@@ -3,3 +3,9 @@ D:\projects\demo\day1\BiztalkSchemaSolution\ReadFilesFromDirectory\bin\Debug\Rea
 D:\projects\demo\day1\BiztalkSchemaSolution\ReadFilesFromDirectory\bin\Debug\ReadFilesFromDirectory.pdb
 D:\projects\demo\day1\BiztalkSchemaSolution\ReadFilesFromDirectory\obj\x86\Debug\ReadFilesFromDirectory.exe
 D:\projects\demo\day1\BiztalkSchemaSolution\ReadFilesFromDirectory\obj\x86\Debug\ReadFilesFromDirectory.pdb
+D:\GitHub_Local\BiztalkSchemaProject\ReadFilesFromDirectory\bin\Debug\ReadFilesFromDirectory.exe.config
+D:\GitHub_Local\BiztalkSchemaProject\ReadFilesFromDirectory\obj\x86\Debug\ReadFilesFromDirectory.exe
+D:\GitHub_Local\BiztalkSchemaProject\ReadFilesFromDirectory\obj\x86\Debug\ReadFilesFromDirectory.pdb
+D:\GitHub_Local\BiztalkSchemaProject\ReadFilesFromDirectory\bin\Debug\ReadFilesFromDirectory.exe
+D:\GitHub_Local\BiztalkSchemaProject\ReadFilesFromDirectory\bin\Debug\ReadFilesFromDirectory.pdb
+D:\GitHub_Local\BiztalkSchemaProject\ReadFilesFromDirectory\obj\x86\Debug\ReadFilesFromDirectory.csprojResolveAssemblyReference.cache
