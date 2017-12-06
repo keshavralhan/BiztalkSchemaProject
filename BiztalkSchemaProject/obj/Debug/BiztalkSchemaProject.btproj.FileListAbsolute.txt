@@ -1,0 +1,4 @@
+D:\projects\demo\day1\SharedLibrary\BiztalkSchemaProject.dll
+D:\projects\demo\day1\SharedLibrary\BiztalkSchemaProject.pdb
+D:\projects\demo\day1\BiztalkSchemaSolution\BiztalkSchemaProject\obj\Debug\BiztalkSchemaProject.dll
+D:\projects\demo\day1\BiztalkSchemaSolution\BiztalkSchemaProject\obj\Debug\BiztalkSchemaProject.pdb

@@ -1,0 +1,109 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="0a1f64c7-8890-4779-a6c3-a2f19692ff08">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalk_Server_Project2" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="7996b60b-ab13-4beb-872c-be5676754409" ParentLink="Module_PortType">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;SchemaProjectService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="SchemaProjectService" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="7c63e80b-1d3a-46a3-935c-c3f66c51ea09" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;OperGetCustomerDetails&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="OperGetCustomerDetails" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="00b80e76-6642-46bc-9cfc-a81539c76924" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_Server_Project2.SchemaProjectService_OperGetCustomerDetails_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://www.biztalkschemaproject.com/:SchemaProjectService_OperGetCustomerDetails_InputMessage&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="0e7e5028-4fbb-4e0e-807a-76e4dda1db83" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="BizTalk_Server_Project2.SchemaProjectService_OperGetCustomerDetails_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://www.biztalkschemaproject.com/:SchemaProjectService_OperGetCustomerDetails_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="9f142907-32c8-447d-9fbb-eecfbd3bc215" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;SchemaProjectService_OperGetCustomerDetails_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="SchemaProjectService_OperGetCustomerDetails_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="b78a3738-e67b-4e00-98c4-d89279cd61fb" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_Server_Project2.BizTalkServiceInstance_schemas_project_com_customerrequest" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;part&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="part" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="70321e0b-c82a-4a69-9fd5-99d301d3c916" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;SchemaProjectService_OperGetCustomerDetails_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="SchemaProjectService_OperGetCustomerDetails_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="196324d6-153f-4949-8165-0cb602943dfe" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BizTalk_Server_Project2.BizTalkServiceInstance_schemas_project_com_customerresponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;part&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="part" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="7027f8b1-d97f-4d65-9e2b-f522fda0b79d" ParentLink="Module_ServiceDeclaration">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;BizTalkServiceInstance&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="BizTalkServiceInstanceClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="b1965a7b-a1c1-401e-b2ef-6ff4e8da7f99" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalk_Server_Project2
+{
+    internal messagetype SchemaProjectService_OperGetCustomerDetails_InputMessage
+    {
+        body BizTalkServiceInstance_schemas_project_com_customerrequest part;
+    };
+    internal messagetype SchemaProjectService_OperGetCustomerDetails_OutputMessage
+    {
+        body BizTalkServiceInstance_schemas_project_com_customerresponse part;
+    };
+    internal porttype SchemaProjectService
+    {
+        requestresponse OperGetCustomerDetails
+        {
+            SchemaProjectService_OperGetCustomerDetails_InputMessage, SchemaProjectService_OperGetCustomerDetails_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service BizTalkServiceInstanceClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

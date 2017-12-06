@@ -1,0 +1,4 @@
+D:\projects\demo\day1\BiztalkSchemaSolution\WebApplication2\bin\WebApplication2.dll
+D:\projects\demo\day1\BiztalkSchemaSolution\WebApplication2\bin\WebApplication2.pdb
+D:\projects\demo\day1\BiztalkSchemaSolution\WebApplication2\obj\Debug\WebApplication2.dll
+D:\projects\demo\day1\BiztalkSchemaSolution\WebApplication2\obj\Debug\WebApplication2.pdb

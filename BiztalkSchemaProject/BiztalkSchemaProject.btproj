@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21107</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1DD0E00-934F-4672-BA75-8EB752D99489}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>BiztalkSchemaProject</RootNamespace>
+    <AssemblyName>BiztalkSchemaProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\SharedLibrary\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>trainingKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="CustomerDetails.xsd">
+      <TypeName>CustomerDetails</TypeName>
+      <Namespace>BiztalkSchemaProject</Namespace>
+    </Schema>
+    <Schema Include="CustomerResponse.xsd">
+      <TypeName>CustomerResponse</TypeName>
+      <Namespace>BiztalkSchemaProject</Namespace>
+    </Schema>
+    <Schema Include="CustomerRequest.xsd">
+      <TypeName>CustomerRequest</TypeName>
+      <Namespace>BiztalkSchemaProject</Namespace>
+    </Schema>
+    <Schema Include="Customer.xsd">
+      <TypeName>Customer</TypeName>
+      <Namespace>BiztalkSchemaProject</Namespace>
+    </Schema>
+    <Schema Include="PurchaseOrder.xsd">
+      <TypeName>PurchaseOrder</TypeName>
+      <Namespace>BiztalkSchemaProject</Namespace>
+    </Schema>
+    <Schema Include="FinalPurchaseOrder.xsd">
+      <TypeName>FinalPurchaseOrder</TypeName>
+      <Namespace>BiztalkSchemaProject</Namespace>
+    </Schema>
+    <None Include="trainingKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="ProcessData.odx">
+      <TypeName>ProcessData</TypeName>
+      <Namespace>BiztalkSchemaProject</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="CustomerToCustomerRequestMap.btm">
+      <TypeName>CustomerToCustomerRequestMap</TypeName>
+      <Namespace>BiztalkSchemaProject</Namespace>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="CustomerResponseToCustomerDetailsMap.btm">
+      <TypeName>CustomerResponseToCustomerDetailsMap</TypeName>
+      <Namespace>BiztalkSchemaProject</Namespace>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="CustomerRequestToCustomerReponseMap.btm">
+      <TypeName>CustomerRequestToCustomerReponseMap</TypeName>
+      <Namespace>BiztalkSchemaProject</Namespace>
+    </Map>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

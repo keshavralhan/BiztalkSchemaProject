@@ -1,0 +1,5 @@
+D:\projects\demo\day1\BiztalkSchemaSolution\ReadFilesFromDirectory\bin\Debug\ReadFilesFromDirectory.exe.config
+D:\projects\demo\day1\BiztalkSchemaSolution\ReadFilesFromDirectory\bin\Debug\ReadFilesFromDirectory.exe
+D:\projects\demo\day1\BiztalkSchemaSolution\ReadFilesFromDirectory\bin\Debug\ReadFilesFromDirectory.pdb
+D:\projects\demo\day1\BiztalkSchemaSolution\ReadFilesFromDirectory\obj\x86\Debug\ReadFilesFromDirectory.exe
+D:\projects\demo\day1\BiztalkSchemaSolution\ReadFilesFromDirectory\obj\x86\Debug\ReadFilesFromDirectory.pdb

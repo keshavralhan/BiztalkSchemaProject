@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xs:schema xmlns="http://schemas.project.com/customerresponse" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://schemas.project.com/customerresponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FullName" type="xs:string" />
+        <xs:element name="Age" type="xs:string" />
+        <xs:element name="EmpID" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
